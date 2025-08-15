@@ -49,6 +49,11 @@ Seasonality: March shows peak revenue; June has the lowest
 Yearly Trend: 2013 had the highest orders and revenue but also the largest loss
 
 📷 Dashboard Pages
+Data Modeling:
+
+In the AdventureWorks project, the data model was designed by connecting key tables to create a logical and efficient relationship structure for analysis. The SalesOrderHeader table was linked to the Customer table through the CustomerID field, enabling customer-level insights. Product-related details flowed from the Product table, connected to ProductSubcategory, which in turn linked to ProductCategory for a clear product hierarchy. The SalesOrderDetail table acted as the transactional fact table, connecting with both SalesOrderHeader and Product tables to consolidate sales, quantity, and pricing data. Additionally, the Customer table was linked to the SalesTerritory table via TerritoryID, allowing geographic and regional performance analysis. This star-schema-like model ensures seamless filtering, accurate aggregation, and powerful analytics in Power BI.
+https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/Screenshot%202025-08-15%20002132.png
+
 📄 Page 1 – Business Overview
 
 
