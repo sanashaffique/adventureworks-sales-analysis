@@ -1,73 +1,184 @@
-# adventureworks-sales-analysis
+
 AdventureWorks Sales & Profit Analysis
-Project Overview
+📊 Project Overview
 
 This project analyzes AdventureWorks sales data to provide insights on revenue, profit, and customer behavior from May 2011 to June 2014. The goal is to identify key trends, top-performing products, and sales patterns across regions and time, supporting better decision-making.
 
-Dataset
+🗂 Dataset
 
 Source: Kaggle – AdventureWorks
 
 Structure: Multiple related tables including SalesOrderHeader, SalesOrderDetail, Product, ProductCategory, ProductSubcategory, Customer, and SalesTerritory.
 
-Record Counts: Ranging from small lookup tables (4–37 rows) to large transactional tables (up to 121,000 rows).
+Record Counts: From small lookup tables (4–37 rows) to large transactional tables (up to 121,000 rows).
 
-Tools & Technologies
+🛠 Tools & Technologies
 
-Excel: Pre-cleaning & removing irrelevant columns
+Excel – Data cleaning and removal of irrelevant columns
 
-Python (pandas): Data wrangling, handling nulls, type conversions, and saving clean CSVs
+Python (pandas) – Data wrangling, handling nulls, type conversions, and exporting clean CSVs
 
-SQL (Azure Data Studio / MySQL Workbench): Exploratory queries and aggregations
+SQL (Azure Data Studio / MySQL Workbench) – Exploratory queries and aggregations
 
-Power BI: Building dashboards with relationships, DAX calculations, and time intelligence functions
+Power BI – Dashboard creation with relationships, DAX measures, and time intelligence functions
 
-Data Cleaning & Wrangling
+🧹 Data Cleaning & Wrangling
 
-Removed columns with high null values or irrelevant information (e.g., StoreID, SalesPersonID, DiscontinuedDate).
+Removed high-null or irrelevant columns (e.g., StoreID, SalesPersonID, DiscontinuedDate)
 
-Converted data types for consistency (floats → integers, datetime → object for IDs).
+Converted data types for consistency
 
-Filled missing categorical values with "Unknown" and numeric values with 0.
+Filled missing values appropriately
 
-Verified unique entries, handled duplicates, and preserved primary keys for relationships.
+Preserved relationships via primary keys
 
-Key Analysis & Insights
+Removed duplicates
 
-Total Orders: 31,465 orders placed; 27,659 successfully delivered
+📈 Key Insights
 
-Revenue: $123.22M, with U.S. generating the highest revenue
+Total Orders: 31,465 placed; 27,659 successfully delivered
 
-Profit: –$44M (losses mainly due to heavy discounts and promotions)
+Revenue: $123.22M, with the U.S. generating the highest share
 
-Top Products: Road Bikes and Mountain Bikes lead in sales
+Profit: –$44M due to heavy discounts and promotions
 
-Top Customers: Customer IDs 11091 & 11176 had the highest number of orders (28 each)
+Top Products: Road Bikes & Mountain Bikes lead in sales but suffer from high profit loss
 
-Territory Insights: Australia had the highest orders (6,843), Northeast US the lowest (352)
+Seasonality: March shows peak revenue; June has the lowest
 
-Seasonality: March saw the highest orders; June the lowest, reflecting potential seasonal patterns
+Yearly Trend: 2013 had the highest orders and revenue but also the largest loss
 
-Yearly Trends: 2013 had the highest orders (14K) and revenue ($48.97M) but also the largest profit loss
+📷 Dashboard Pages
+📄 Page 1 – Business Overview
 
-Recommendations
 
-Refine promotional strategies to protect margins
+Provides a KPI-driven overview including total orders, total revenue, total customers, order success rate, on-time delivery, sales vs target, profit vs target, and top categories/subcategories by orders and revenue. Includes key business observations highlighting sales gaps and loss causes.
 
-Improve product and customer data management
+📄 Page 2 – Customer & Product Insights
 
-Focus on profitable customer segmentation
 
-Enhance data completeness and accuracy for better analytics
+Focuses on customer and product performance:
 
-Limitations
+Top 5 customers by revenue and by orders
 
-Artificially constant delivery days limit logistics analysis
+Top 5 products by sales and profit
 
-Missing store and detailed customer information
+Sales by special offers and impact on profit
 
-Heavy discounting impacts profitability analysis
+Sales vs profit relationship analysis
 
-Outcome
+Actual vs target sales by category
 
-A fully cleaned, structured dataset integrated into Power BI, enabling interactive dashboards with sales, profit, and time-based insights.
+📄 Page 3 – Regional & Time Analysis
+
+AdventureWorks Sales & Profit Analysis
+📊 Project Overview
+
+This project analyzes AdventureWorks sales data to provide insights on revenue, profit, and customer behavior from May 2011 to June 2014. The goal is to identify key trends, top-performing products, and sales patterns across regions and time, supporting better decision-making.
+
+🗂 Dataset
+
+Source: Kaggle – AdventureWorks
+
+Structure: Multiple related tables including SalesOrderHeader, SalesOrderDetail, Product, ProductCategory, ProductSubcategory, Customer, and SalesTerritory.
+
+Record Counts: From small lookup tables (4–37 rows) to large transactional tables (up to 121,000 rows).
+
+🛠 Tools & Technologies
+
+Excel – Data cleaning and removal of irrelevant columns
+
+Python (pandas) – Data wrangling, handling nulls, type conversions, and exporting clean CSVs
+
+SQL (Azure Data Studio / MySQL Workbench) – Exploratory queries and aggregations
+
+Power BI – Dashboard creation with relationships, DAX measures, and time intelligence functions
+
+🧹 Data Cleaning & Wrangling
+
+Removed high-null or irrelevant columns (e.g., StoreID, SalesPersonID, DiscontinuedDate)
+
+Converted data types for consistency
+
+Filled missing values appropriately
+
+Preserved relationships via primary keys
+
+Removed duplicates
+
+📈 Key Insights
+
+Total Orders: 31,465 placed; 27,659 successfully delivered
+
+Revenue: $123.22M, with the U.S. generating the highest share
+
+Profit: –$44M due to heavy discounts and promotions
+
+Top Products: Road Bikes & Mountain Bikes lead in sales but suffer from high profit loss
+
+Seasonality: March shows peak revenue; June has the lowest
+
+Yearly Trend: 2013 had the highest orders and revenue but also the largest loss
+
+📷 Dashboard Pages
+📄 Page 1 – Business Overview
+https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/2025-08-15%20(20).png
+
+Provides a KPI-driven overview including total orders, total revenue, total customers, order success rate, on-time delivery, sales vs target, profit vs target, and top categories/subcategories by orders and revenue. Includes key business observations highlighting sales gaps and loss causes.
+
+📄 Page 2 – Customer & Product Insights
+https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/2025-08-15%20(21).png
+
+Focuses on customer and product performance:
+
+Top 5 customers by revenue and by orders
+
+Top 5 products by sales and profit
+
+Sales by special offers and impact on profit
+
+Sales vs profit relationship analysis
+
+Actual vs target sales by category
+
+📄 Page 3 – Regional & Time Analysis
+https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/2025-08-15%20(22).png
+
+Analyzes sales trends over time and across territories:
+
+Revenue and order quantity by country
+
+Orders by shipping method
+
+Month-over-month and year-over-year revenue growth
+
+Seasonal variations and peak order months
+
+📌 Recommendations
+
+Reduce excessive discounting to protect profit margins
+
+Focus promotions on profitable segments
+
+Target underperforming regions with marketing efforts
+
+Improve pricing strategy to meet sales targets
+Analyzes sales trends over time and across territories:
+
+Revenue and order quantity by country
+
+Orders by shipping method
+
+Month-over-month and year-over-year revenue growth
+
+Seasonal variations and peak order months
+
+📌 Recommendations
+
+Reduce excessive discounting to protect profit margins
+
+Focus promotions on profitable segments
+
+Target underperforming regions with marketing efforts
+
+Improve pricing strategy to meet sales targets
