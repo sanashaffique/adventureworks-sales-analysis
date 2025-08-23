@@ -67,9 +67,4 @@ Orders by shipping method
 Month-over-month and year-over-year revenue growth
 Seasonal variations and peak order months
 
-📌 Recommendations
 
-Reduce excessive discounting to protect profit margins
-Focus promotions on profitable segments
-Target underperforming regions with marketing efforts
-Improve pricing strategy to meet sales targets
