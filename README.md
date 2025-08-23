@@ -31,6 +31,9 @@ Seasonality: March shows peak revenue; June has the lowest
 Yearly Trend: 2013 had the highest orders and revenue but also the largest loss
 
 📷 Dashboard Pages
+Dataset Modeling:
+https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/Screenshot%202025-08-15%20002132.png
+
 📄 Page 1 – Business Overview
 https://github.com/sanashaffique/adventureworks-sales-analysis/blob/main/2025-08-15%20(20).png
 
